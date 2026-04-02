@@ -1,0 +1,2113 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Bootstrap icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS output-->
+    <link href="./output.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1" type="module"></script>
+</head>
+
+<body>
+
+    <header class="font-nunito fixed w-full z-100  ">
+
+        <nav id="navbar" class=" bg-transparent duration-500  ">
+            <div class="container  w-full  mx-auto  lg:px-8 max-lg:container sm:px-6 sm:py-5 px-4 py-2  ">
+                <div class="flex  justify-between items-center h-16 ">
+
+                    <!-- Logo (Left) -->
+                    <div class="shrink-0">
+                        <a href="#" class="flex items-center">
+                            <span><img src="img/logo.png" alt=""></span>
+                            <span class="text-2xl sm:text-3xl font-bold text-darkblue ">FlexStart</span>
+                        </a>
+                    </div>
+
+                    <!-- Desktop Links and Button (Hidden on lg and below) -->
+                    <div class=" lg:flex items-center space-x-8 ">
+                        <div class="hidden xl:flex items-center space-x-8">
+                            <a href="#" class="text-gray-700 hover:text-blue-600 font-medium transition">Home</a>
+                            <a href="#" class="text-gray-700 hover:text-blue-600 font-medium transition">About</a>
+                            <a href="#" class="text-gray-700 hover:text-blue-600 font-medium transition">Services</a>
+                            <a href="#" class="text-gray-700 hover:text-blue-600 font-medium transition">Portfolio</a>
+                            <a href="#" class="text-gray-700 hover:text-blue-600 font-medium transition">Team</a>
+                            <a href="#" class="text-gray-700 hover:text-blue-600 font-medium transition">Blog</a>
+
+
+                            <!-- First Dropdown -->
+                            <div class="inline-block relative dropdown-container mr-4">
+                                <button
+                                    class="dropdown-trigger inline-flex w-full justify-center gap-x-1.5 hover:text-blue-600">
+                                    Dropdown
+                                    <svg viewBox="0 0 20 20" fill="currentColor" class="-mr-1 h-5 w-5 text-gray-400">
+                                        <path fill-rule="evenodd"
+                                            d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                </button>
+
+                                <div
+                                    class="dropdown-menu absolute right-0 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 z-10">
+                                    <div class="py-1">
+                                        <a href="#"
+                                            class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Action
+                                            1</a>
+
+                                        <!-- Nested dropdown -->
+                                        <div class="relative nested-dropdown-container">
+                                            <button
+                                                class="nested-dropdown-trigger w-full text-left px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 flex justify-between items-center">
+                                                Deep Dropdown
+                                                <span class="ml-auto">→</span>
+                                            </button>
+
+                                            <div
+                                                class="dropdown-menu nested-dropdown-menu absolute right-full top-0 ml-1 w-56 origin-top-left rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 z-20">
+                                                <div class="py-1">
+                                                    <a href="#"
+                                                        class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Deep
+                                                        Dropdown 1</a>
+                                                    <a href="#"
+                                                        class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Deep
+                                                        Dropdown 2</a>
+                                                    <a href="#"
+                                                        class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Deep
+                                                        Dropdown 3</a>
+                                                    <a href="#"
+                                                        class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Deep
+                                                        Dropdown 4</a>
+                                                    <a href="#"
+                                                        class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Deep
+                                                        Dropdown 5</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <a href="#"
+                                            class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Action
+                                            3</a>
+                                        <a href="#"
+                                            class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Action
+                                            4</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Listing Dropdown starts  -->
+                            <div class="inline-block relative dropdown-container">
+                                <button
+                                    class="dropdown-trigger inline-flex w-full justify-center gap-x-1.5 hover:text-blue-600">
+                                    Listing Dropdown
+                                    <svg viewBox="0 0 20 20" fill="currentColor" class="-mr-1 h-5 w-5 text-gray-400">
+                                        <path fill-rule="evenodd"
+                                            d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                </button>
+
+                                <div
+                                    class="dropdown-menu absolute right-0 mt-2 w-[50vw] md:w-[60vw] origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 z-10">
+                                    <div class="py-1">
+
+
+                                        <div class="grid grid-cols-2 md:grid-cols-4 ">
+
+                                            <div class="col">
+                                                <a href="#"
+                                                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Action
+                                                    1</a>
+                                                <a href="#"
+                                                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Action
+                                                    1</a>
+                                                <a href="#"
+                                                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Action
+                                                    1</a>
+
+                                            </div>
+                                            <div class="col">
+                                                <a href="#"
+                                                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Action
+                                                    1</a>
+                                                <a href="#"
+                                                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Action
+                                                    1</a>
+                                                <a href="#"
+                                                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Action
+                                                    1</a>
+
+                                            </div>
+                                            <div class="col">
+                                                <a href="#"
+                                                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Action
+                                                    1</a>
+                                                <a href="#"
+                                                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Action
+                                                    1</a>
+                                                <a href="#"
+                                                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Action
+                                                    1</a>
+
+                                            </div>
+                                            <div class="col">
+                                                <a href="#"
+                                                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Action
+                                                    1</a>
+                                                <a href="#"
+                                                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Action
+                                                    1</a>
+                                                <a href="#"
+                                                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Action
+                                                    1</a>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Listing Dropdown ends  -->
+                            <a href="#" class="text-gray-700 hover:text-blue-600 font-medium transition">Contact</a>
+
+                        </div>
+
+                        <div class="flex  items-center h-16 gap-4 ">
+
+                            <a href="#"
+                                class="bg-blue-600 text-white px-2 sm:px-5 py-2 rounded-sm text-xs sm:text-lg sm:font-medium  hover:bg-blue-700 transition">
+                                Get Started
+                            </a>
+
+                            <!-- Mobile Hamburger Button (Visible on md and below) -->
+                            <div class=" xl:hidden">
+                                <button id="mobileMenuButton"
+                                    class="text-gray-700 hover:text-blue-600 focus:outline-none">
+                                    <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path id="menuIcon" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                                        <path id="closeIcon" class="hidden" stroke-linecap="round"
+                                            stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12">
+                                        </path>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Mobile Menu (Hidden by default, shows on lg and below) -->
+            <div id="mobileMenu" class=" hidden xl:hidden border-t border-gray-200 bg-white text-center ">
+                <div class="px-4 pt-2 pb-4 space-y-1">
+                    <a href="#"
+                        class="block px-3 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600 rounded-md font-medium transition">Home</a>
+                    <a href="#"
+                        class="block px-3 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600 rounded-md font-medium transition">About</a>
+                    <a href="#"
+                        class="block px-3 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600 rounded-md font-medium transition">Services</a>
+                    <a href="#"
+                        class="block px-3 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600 rounded-md font-medium transition">Team</a>
+                    <a href="#"
+                        class="block px-3 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600 rounded-md font-medium transition">Blog</a>
+
+                    <!--dropdown starts-->
+
+                    <!-- Include this script tag or install `@tailwindplus/elements` via npm: -->
+                    <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1" type="module"></script> -->
+                    <!-- Main dropdown -->
+
+
+                    <!-- First Dropdown -->
+                    <div class=" dropdown-container py-2">
+                        <button
+                            class="dropdown-trigger inline-flex w-full justify-center gap-x-1.5 text-gray-700 hover:bg-gray-100 hover:text-blue-600">
+                            Dropdown
+                            <svg viewBox="0 0 20 20" fill="currentColor" class="-mr-1 h-5 w-5 text-gray-400">
+                                <path fill-rule="evenodd"
+                                    d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </button>
+
+                        <div
+                            class="dropdown-menu  mt-2 mx-auto  w-[40vw] sm:w-[20vw]   origin-bottom-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 z-10">
+                            <div class="py-1">
+                                <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Option
+                                    1</a>
+                                <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Option
+                                    2</a>
+
+                                <!-- Nested dropdown -->
+                                <div class=" nested-dropdown-container">
+                                    <button
+                                        class="nested-dropdown-trigger w-full text-center px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 flex justify-between items-center">
+                                        More Options <i class="bi bi-chevron-down  text-gray-500/50"></i>
+
+                                    </button>
+
+                                    <div
+                                        class="dropdown-menu nested-dropdown-menu  ml-1  origin-bottom rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 z-20">
+                                        <div class="py-1">
+                                            <a href="#"
+                                                class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Account
+                                                settings</a>
+                                            <a href="#"
+                                                class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Support</a>
+                                            <a href="#"
+                                                class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">License</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Listing Dropdown starts  -->
+                    <div class=" dropdown-container py-2">
+                        <button
+                            class="dropdown-trigger inline-flex w-full justify-center gap-x-1.5 text text-gray-700 hover:bg-gray-100 hover:text-blue-600">
+                            Listing Dropdown
+                            <svg viewBox="0 0 20 20" fill="currentColor" class="-mr-1 h-5 w-5 text-gray-400">
+                                <path fill-rule="evenodd"
+                                    d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </button>
+
+                        <div
+                            class="dropdown-menu  mt-2 mx-auto  w-[50vw] md:w-[80vw] origin-bottom-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 z-10">
+                            <div class="py-1">
+
+
+                                <div class="grid grid-cols-2 lg:grid-cols-4 ">
+
+                                    <div class="col">
+                                        <a href="#"
+                                            class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Action
+                                            1</a>
+                                        <a href="#"
+                                            class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Action
+                                            1</a>
+                                        <a href="#"
+                                            class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Action
+                                            1</a>
+
+                                    </div>
+                                    <div class="col">
+                                        <a href="#"
+                                            class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Action
+                                            1</a>
+                                        <a href="#"
+                                            class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Action
+                                            1</a>
+                                        <a href="#"
+                                            class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Action
+                                            1</a>
+
+                                    </div>
+                                    <div class="col">
+                                        <a href="#"
+                                            class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Action
+                                            1</a>
+                                        <a href="#"
+                                            class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Action
+                                            1</a>
+                                        <a href="#"
+                                            class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Action
+                                            1</a>
+
+                                    </div>
+                                    <div class="col">
+                                        <a href="#"
+                                            class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Action
+                                            1</a>
+                                        <a href="#"
+                                            class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Action
+                                            1</a>
+                                        <a href="#"
+                                            class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Action
+                                            1</a>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Listing Dropdown ends  -->
+
+                    <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Contact</a>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!--Header ends -->
+
+    <!-- Hero section starts -->
+
+    <section class="container p-0  bg-hero pb-20">
+
+        <div class="w-full px-6 xl:container xl:w4/5 xl:mx-auto  ">
+            <div class="grid grid-cols-1   max-xl:pt-40  lg:grid-cols-2  items-center min-h-screen  ">
+
+                <div class="col">
+
+                    <div class="flex flex-col gap-6 md:px-10">
+                        <h2 class="text-3xl md:text-4xl lg:text-5xl  text-darkblue font-semibold">We offer modern
+                            solutions for
+                            growing your
+                            business</h2>
+                        <p class="text-gray-400 text-lg">We are team of talented designers making websites with
+                            Bootstrap</p>
+                        <div class="flex items-center gap-y-4 flex-col md:flex-row md:gap-x-4   ">
+                            <button type="button" class="text-white bg-blue-600 rounded-sm p-2 md:px-10 md:py-3">
+                                Get Started
+                                <i class="bi bi-arrow-right "></i>
+                            </button>
+                            <a class="flex flex-row items-center gap-2" href="#">
+                                <i class="bi bi-play-circle text-blue-700 text-3xl "></i>
+                                Watch Video
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="col">
+                    <img class="animate-bounce place-self-center xl:place-self-auto" src="img/hero-img.png" alt="">
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+    <!--Hero section ends -->
+
+
+    <!--about section starts -->
+
+    <section class="container w-4/5 mx-auto max-lg:container px-6 ">
+
+
+        <div class="grid grid-cols-1 xl:grid-cols-2 mt-15 md:mt-30">
+            <div class="col content-center p-0 ">
+
+                <div class="bg-lite p-10  xl:p-6 flex flex-col gap-5 ml-auto xl:w-[35vw]    ">
+                    <div>
+                        <h3 class="text-blue-600 pb-2 ">WHO WE ARE</h3>
+                        <h4 class="text-darkblue font-semibold text-lg md:text-2xl">Expedita voluptas omnis cupiditate
+                            totam
+                            eveniet
+                            nobis sint iste. Dolores est repellat corrupti
+                            reprehenderit.</h4>
+
+                    </div>
+
+                    <p class="text-gray-600">Quisquam vel ut sint cum eos hic dolores aperiam. Sed deserunt et.
+                        Inventore et et dolor
+                        consequatur itaque ut voluptate sed et. Magnam nam ipsum tenetur suscipit voluptatum nam et est
+                        corrupti.</p>
+                    <button type="button"
+                        class="text-white font-semibold  bg-blue-600 rounded-sm p-3 md:px-10 md:py-3 w-fit ">Read
+                        More
+                        <i class="bi bi-arrow-right"></i>
+                    </button>
+
+                </div>
+            </div>
+            <div class="col ">
+
+                <img class=" max-xl:w-full mx-auto      " src="img/about.jpg" alt="">
+
+            </div>
+
+        </div>
+
+    </section>
+    <!--about section ends -->
+
+    <!--Value Section starts -->
+
+    <section class="font-nunito mt-30 w-full px-6 xl:container xl:w4/5 xl:mx-auto ">
+        <div class="flex flex-col items-center gap-6 ">
+            <h3 class="heading-style">Our Values</h3>
+            <p class="text-style">What we value most</p>
+
+        </div>
+        <div class="grid grid-cols-1 mt-20 gap-4 sm:grid-cols-2 sm:gap-4 xl:grid-cols-3  sm:xl:gap-4   ">
+            <!-- Value-card 1-->
+
+            <div class="col border-0 ">
+                <div class="card p-0 px-5 py-10 shadow-xl  ">
+
+                    <img class="card-img-effect lg:p-10" src="img/values-1.png" alt="">
+                    <h4 class="font-semibold text-2xl">Ad cupiditate sed est odio</h4>
+                    <p class="text-lg">Eum ad dolor et. Autem aut fugiat debitis voluptatem consequuntur sit. Et
+                        veritatis id.</p>
+
+                </div>
+
+            </div>
+            <!-- Value-card 2-->
+            <div class="col border-0  ">
+                <div class="card p-0 px-5 py-10 shadow-xl  ">
+
+                    <img class="card-img-effect lg:p-10" src="img/values-2.png" alt="">
+                    <h4 class="font-semibold text-2xl">Ad cupiditate sed est odio</h4>
+                    <p class="text-lg">Eum ad dolor et. Autem aut fugiat debitis voluptatem consequuntur sit. Et
+                        veritatis id.</p>
+
+                </div>
+
+            </div>
+            <!-- Value-card 3-->
+            <div class="col border-0 ">
+                <div class="card p-0 px-5 py-10 shadow-xl  ">
+
+                    <img class="card-img-effect lg:p-10" src="img/values-3.png" alt="">
+                    <h4 class="font-semibold text-2xl">Ad cupiditate sed est odio</h4>
+                    <p class="text-lg">Eum ad dolor et. Autem aut fugiat debitis voluptatem consequuntur sit. Et
+                        veritatis id.</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- Value section ends -->
+
+    <!-- stats section starts -->
+
+    <section class="w-full px-6 xl:container xl:w4/5 xl:mx-auto ">
+        <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-8 mt-30">
+            <!-- Stats card 1-->
+            <div class="col">
+                <div class="stats-card">
+                    <i class="bi bi-emoji-smile text-blue-600 text-5xl"></i>
+                    <div>
+                        <h4>232</h4>
+                        <p>Happy Clients</p>
+                    </div>
+
+
+                </div>
+            </div>
+            <!-- Stats card 2-->
+            <div class="col">
+                <div class="stats-card">
+                    <i class="bi bi-journal-richtext text-orange-500 text-5xl"></i>
+                    <div>
+                        <h4>521</h4>
+                        <p>Projects</p>
+                    </div>
+
+
+                </div>
+            </div>
+            <!-- Stats card 3-->
+            <div class="col">
+                <div class="stats-card sm:px-6">
+                    <i class="bi bi-headset text-green-600 text-5xl"></i>
+                    <div>
+                        <h4>1463</h4>
+                        <p>Hours Of Support</p>
+                    </div>
+
+
+                </div>
+            </div>
+            <!-- Stats card 4-->
+            <div class="col">
+                <div class="stats-card">
+                    <i class="bi bi-people text-red-600 text-5xl"></i>
+                    <div>
+                        <h4>15</h4>
+                        <p>Hard Workers</p>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- stats section ends -->
+
+    <!-- Features section starts -->
+
+    <section class=" my-20  w-full px-6 xl:container xl:w4/5 xl:mx-auto  ">
+        <div class="flex flex-col items-center gap-6">
+            <h4 class="heading-style">FEATURES</h4>
+            <p class="text-style">Our Advanced Features</p>
+
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-20">
+
+            <!--Feature image -->
+
+            <div class="col">
+                <img class=" " src="img/features.png" alt="">
+            </div>
+            <!--Feature checkboxes -->
+            <div class="col content-center">
+                <div class="grid grid-cols-1 md:grid-cols-2  gap-4 ">
+                    <div class="col space-y-10 ">
+                        <div class=" p-6 shadow space-x-2 ">
+                            <input type="checkbox" id="check1" class="checkbox bi bi-check " checked>
+
+                            <label for="check1" class="text-xl text-darkblue font-medium">
+                                Eos aspernatur rem</label>
+
+                        </div>
+                        <div class=" p-6 shadow space-x-2 ">
+                            <input type="checkbox" id="check1" class="checkbox bi bi-check" checked>
+
+                            <label for="check1" class="text-xl text-darkblue font-medium">
+                                Eos aspernatur rem</label>
+
+                        </div>
+
+                        <div class=" p-6 shadow space-x-2 ">
+                            <input type="checkbox" id="check1" class="checkbox bi bi-check" checked>
+
+                            <label for="check1" class="text-xl text-darkblue font-medium">
+                                Eos aspernatur rem</label>
+
+                        </div>
+
+
+                    </div>
+                    <div class="col space-y-10">
+
+                        <div class=" p-6 shadow space-x-2 ">
+                            <input type="checkbox" id="check1" class="checkbox bi bi-check" checked>
+
+                            <label for="check1" class="text-xl text-darkblue font-medium">
+                                Eos aspernatur rem</label>
+
+                        </div>
+                        <div class=" p-6 shadow space-x-2 ">
+                            <input type="checkbox" id="check1" class="checkbox bi bi-check" checked>
+
+                            <label for="check1" class="text-xl text-darkblue font-medium">
+                                Eos aspernatur rem</label>
+
+                        </div>
+                        <div class=" p-6 shadow space-x-2 ">
+                            <input type="checkbox" id="check1" class="checkbox bi bi-check" checked>
+
+                            <label for="check1" class="text-xl text-darkblue font-medium">
+                                Eos aspernatur rem</label>
+
+                        </div>
+
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- Feature section continue-->
+    <section class="w-full px-6 xl:container xl:w4/5 xl:mx-auto ">
+        <div class="grid grid-cols-8  lg:grid-cols-12 gap-y-8   ">
+
+            <div class="col-span-8 content-center">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+                    <div class="col space-y-15 ">
+                        <div class="flex flex-row space-x-2">
+                            <i class="bi bi-award text-5xl text-blue-600"></i>
+                            <span class="flex flex-col gap-2 ">
+                                <h4 class="text-lg font-semibold text-darkblue">Corporis voluptates sit</h4>
+                                <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip
+                                </p>
+                            </span>
+                        </div>
+                        <div class="flex flex-row space-x-2">
+                            <i class="bi bi-dribbble text-5xl text-blue-600"></i>
+                            <span class="flex flex-col gap-2 ">
+                                <h4 class="text-lg font-semibold text-darkblue">Corporis voluptates sit</h4>
+                                <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip
+                                </p>
+                            </span>
+                        </div>
+                        <div class="flex flex-row space-x-2">
+                            <i class="bi bi-lightning-charge text-5xl text-blue-600"></i>
+                            <span class="flex flex-col gap-2 ">
+                                <h4 class="text-lg font-semibold text-darkblue">Corporis voluptates sit</h4>
+                                <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip
+                                </p>
+                            </span>
+                        </div>
+
+                    </div>
+
+                    <div class="col space-y-15">
+                        <div class="flex flex-row space-x-2">
+                            <i class="bi bi-card-checklist text-5xl text-blue-600"></i>
+                            <span class="flex flex-col gap-2 ">
+                                <h4 class="text-lg font-semibold text-darkblue">Corporis voluptates sit</h4>
+                                <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip
+                                </p>
+                            </span>
+                        </div>
+                        <div class="flex flex-row space-x-2">
+                            <i class="bi bi-filter-circle text-5xl text-blue-600"></i>
+                            <span class="flex flex-col gap-2 ">
+                                <h4 class="text-lg font-semibold text-darkblue">Corporis voluptates sit</h4>
+                                <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip
+                                </p>
+                            </span>
+                        </div>
+                        <div class="flex flex-row space-x-2">
+                            <i class="bi bi-patch-check text-5xl text-blue-600"></i>
+                            <span class="flex flex-col gap-2 ">
+                                <h4 class="text-lg font-semibold text-darkblue">Corporis voluptates sit</h4>
+                                <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip
+                                </p>
+                            </span>
+                        </div>
+
+                    </div>
+
+
+
+
+                </div>
+            </div>
+
+            <!--Feature image -->
+
+            <div class="col-span-12 lg:col-span-4">
+                <img class="lg:min-h-screen lg:object-contain max-lg:max-w-[50vw] max-lg:place-self-center"
+                    src="img/alt-features.png" alt="">
+            </div>
+
+        </div>
+
+    </section>
+    <!--Feature section ends -->
+
+
+    <!--Services section starts -->
+    <section class="w-full px-6 xl:container xl:w4/5 xl:mx-auto">
+
+        <div class="flex flex-col items-center gap-4 mt-20">
+            <h4 class="heading-style">Services</h4>
+            <p class="text-style">Check Our Services</p>
+
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3  gap-4 my-20 cursor-pointer select-none">
+
+            <!-- service card 1-->
+
+            <div class="col border-0 shadow-lg">
+                <div class="card px-8 py-15 gap-8 shadow-xl border-b-4 border-liteblue hover:bg-liteblue group">
+                    <div
+                        class="bg-liteblue/10 rounded-md size-20 flex justify-center items-center group-hover:bg-white ">
+                        <i class="bi bi-activity icon text-5xl text-liteblue  "></i>
+
+                    </div>
+
+                    <div class="flex flex-col space-y-3 ">
+
+                        <h4 class="font-semibold text-2xl text-darkblue group-hover:text-white">Nesciunt Mete</h4>
+                        <p class="text-lg group-hover:text-white">Provident nihil minus qui consequatur non omnis
+                            maiores. Eos
+                            accusantium minus dolores iure perferendis tempore et consequatur.</p>
+                        <a class="text-liteblue font-semibold group-hover:text-white" href="#">Read More <i
+                                class="bi bi-arrow-right"></i> </a>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- service card 2-->
+            <div class="col">
+
+                <div class="card px-8 py-15 gap-8 shadow-xl border-b-4 border-orange hover:bg-orange group">
+                    <div class="bg-orange/10 rounded-md size-20 flex justify-center items-center group-hover:bg-white ">
+                        <i class="bi bi-broadcast icon text-5xl text-orange  "></i>
+
+                    </div>
+
+                    <div class="flex flex-col space-y-3">
+
+                        <h4 class="font-semibold text-2xl text-darkblue group-hover:text-white">Nesciunt Mete</h4>
+                        <p class="text-lg group-hover:text-white">Provident nihil minus qui consequatur non omnis
+                            maiores. Eos
+                            accusantium minus dolores iure perferendis tempore et consequatur.</p>
+                        <a class="text-orange font-semibold group-hover:text-white" href="#">Read More <i
+                                class="bi bi-arrow-right"></i> </a>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- service card 3-->
+            <div class="col">
+                <div class="card px-8 py-15 gap-8 shadow-xl border-b-4 border-green hover:bg-green group">
+                    <div class="bg-green/10 rounded-md size-20 flex justify-center items-center group-hover:bg-white  ">
+                        <i class="bi bi-easel icon text-5xl text-green  "></i>
+
+                    </div>
+
+                    <div class="flex flex-col space-y-3">
+
+                        <h4 class="font-semibold text-2xl text-darkblue group-hover:text-white">Nesciunt Mete</h4>
+                        <p class="text-lg group-hover:text-white">Provident nihil minus qui consequatur non omnis
+                            maiores. Eos
+                            accusantium minus dolores iure perferendis tempore et consequatur.</p>
+                        <a class="text-green font-semibold group-hover:text-white" href="#">Read More <i
+                                class="bi bi-arrow-right"></i> </a>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- service card 4-->
+            <div class="col">
+                <div class="card px-8 py-15 gap-8  shadow-xl border-b-4 border-red hover:bg-red group">
+                    <div class="bg-red/10 rounded-md size-20 flex justify-center items-center group-hover:bg-white ">
+                        <i class="bi bi-bounding-box-circles icon text-5xl text-red  "></i>
+
+                    </div>
+
+                    <div class="flex flex-col space-y-3">
+
+                        <h4 class="font-semibold text-2xl text-darkblue group-hover:text-white">Nesciunt Mete</h4>
+                        <p class="text-lg group-hover:text-white">Provident nihil minus qui consequatur non omnis
+                            maiores. Eos
+                            accusantium minus dolores iure perferendis tempore et consequatur.</p>
+                        <a class="text-red font-semibold group-hover:text-white" href="#">Read More <i
+                                class="bi bi-arrow-right"></i> </a>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- service card 5-->
+            <div class="col">
+                <div class="card px-8 py-15 gap-8 shadow-xl  border-b-4 border-purple hover:bg-purple group">
+                    <div class="bg-purple/10 rounded-md size-20 flex justify-center items-center group-hover:bg-white ">
+                        <i class="bi bi-calendar4-week icon text-5xl text-purple  "></i>
+
+                    </div>
+
+                    <div class="flex flex-col space-y-3">
+
+                        <h4 class="font-semibold text-2xl text-darkblue group-hover:text-white ">Nesciunt Mete</h4>
+                        <p class="text-lg group-hover:text-white">Provident nihil minus qui consequatur non omnis
+                            maiores. Eos
+                            accusantium minus dolores iure perferendis tempore et consequatur.</p>
+                        <a class="text-purple font-semibold group-hover:text-white" href="#">Read More <i
+                                class="bi bi-arrow-right"></i> </a>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- service card 6-->
+            <div class="col">
+                <div class="card px-8 py-15 gap-8 shadow-xl   border-b-4 border-pink hover:bg-pink group">
+                    <div class="bg-pink/10 rounded-md size-20 flex justify-center items-center group-hover:bg-white  ">
+                        <i class="bi bi-chat-square-text text-5xl text-pink  "></i>
+
+                    </div>
+
+                    <div class="flex flex-col space-y-3">
+
+                        <h4 class="font-semibold text-2xl text-darkblue group-hover:text-white">Nesciunt Mete</h4>
+                        <p class="text-lg group-hover:text-white">Provident nihil minus qui consequatur non omnis
+                            maiores. Eos
+                            accusantium minus dolores iure perferendis tempore et consequatur.</p>
+                        <a class="text-pink font-semibold group-hover:text-white" href="#">Read More <i
+                                class="bi bi-arrow-right"></i> </a>
+
+                    </div>
+
+                </div>
+            </div>
+
+    </section>
+
+    <!--Services section ends -->
+
+    <!--Pricing section starts -->
+    <section class="w-full px-6 xl:container xl:w4/5 xl:mx-auto">
+
+        <div class="flex flex-col items-center gap-4">
+            <h4 class="heading-style">Pricing</h4>
+            <p class="text-style">Check Our Affordable Pricing</p>
+
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4  gap-4 mt-20">
+
+
+            <!--Pricing Card 1-->
+            <div class="col">
+
+                <div class="card p-10 flex flex-col space-y-5 shadow-2xl hover:scale-105 duration-500">
+
+
+                    <h4 class="font-semibold text-2xl text-green">Free Plan</h4>
+                    <p class="text-4xl"> <sup class="text-lg">$ </sup>0 <sub class="text-gray-400 text-sm ">/ mo</sub>
+                    </p>
+                    <i class="bi bi-box text-green text-5xl"></i>
+                    <ul class="leading-10">
+
+                        <li>Aida dere</li>
+                        <li>Nec feugiat nisl</li>
+                        <li>Nulla at volutpat dola</li>
+                        <li class="line-through text-gray-400">Pharetra massa</li>
+                        <li class="line-through text-gray-400">Massa ultricies mi</li>
+                    </ul>
+                    <button type="button"
+                        class="rounded-3xl px-8 py-2 border-blue-600 border-1 text-blue-600 hover:bg-blue-600 hover:text-white ">Buy
+                        Now</button>
+
+                </div>
+
+            </div>
+            <!--Pricing Card 2-->
+            <div class="col">
+
+                <div class="card p-10 flex flex-col space-y-5 shadow-2xl hover:scale-105 duration-500">
+
+
+                    <h4 class="font-semibold text-2xl text-liteblue">Starter Plan</h4>
+                    <p class="text-4xl"> <sup class="text-lg">$ </sup>19 <sub class="text-gray-400 text-sm ">/ mo</sub>
+                    </p>
+                    <i class="bi bi-send text-liteblue text-5xl"></i>
+                    <ul class="leading-10">
+
+                        <li>Aida dere</li>
+                        <li>Nec feugiat nisl</li>
+                        <li>Nulla at volutpat dola</li>
+                        <li>Pharetra massa</li>
+                        <li class="line-through text-gray-400">Massa ultricies mi</li>
+                    </ul>
+                    <button type="button"
+                        class="rounded-3xl px-8 py-2 border-blue-600 border-1 text-blue-600 hover:bg-blue-600 hover:text-white ">Buy
+                        Now</button>
+
+                </div>
+
+            </div>
+            <div class="col">
+
+                <div class="card p-10 flex flex-col space-y-5 shadow-2xl hover:scale-105 duration-500">
+
+
+                    <h4 class="font-semibold text-2xl text-orange">Business Plan</h4>
+                    <p class="text-4xl"> <sup class="text-lg">$ </sup>29 <sub class="text-gray-400 text-sm ">/ mo</sub>
+                    </p>
+                    <i class="bi bi-airplane text-orange text-5xl"></i>
+                    <ul class="leading-10">
+
+                        <li>Aida dere</li>
+                        <li>Nec feugiat nisl</li>
+                        <li>Nulla at volutpat dola</li>
+                        <li>Pharetra massa</li>
+                        <li>Massa ultricies mi</li>
+                    </ul>
+                    <button type="button"
+                        class="rounded-3xl px-8 py-2 border-blue-600 border-1 text-blue-600 hover:bg-blue-600 hover:text-white  ">Buy
+                        Now</button>
+
+                </div>
+            </div>
+            <div class="col">
+
+                <div class="card p-10 flex flex-col space-y-5 shadow-2xl hover:scale-105 duration-500">
+
+
+                    <h4 class="font-semibold text-2xl text-blue-600">Ultimate Plan</h4>
+                    <p class="text-4xl"> <sup class="text-lg">$ </sup>49 <sub class="text-gray-400 text-sm ">/ mo</sub>
+                    </p>
+                    <i class="bi bi-rocket text-blue-600 text-5xl"></i>
+                    <ul class="leading-10">
+
+                        <li>Aida dere</li>
+                        <li>Nec feugiat nisl</li>
+                        <li>Nulla at volutpat dola</li>
+                        <li>Pharetra massa</li>
+                        <li>Massa ultricies mi</li>
+                    </ul>
+                    <button type="button"
+                        class="rounded-3xl px-8 py-2 border-blue-600 border-1 text-blue-600 hover:bg-blue-600 hover:text-white ">Buy
+                        Now</button>
+
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+    <!--Pricing section ends -->
+
+    <!--FAQ section starts -->
+    <section class="w-full px-6  xl:container xl:w4/5 xl:mx-auto my-20">
+
+        <div class="flex flex-col items-center gap-4">
+            <h4 class="heading-style">F.A.Q</h4>
+            <p class="text-style">Frequently Asked Questions</p>
+
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-20">
+
+            <!-- Accordion 1  -->
+            <div class="col">
+
+                <div class="w-full max-w-2xl bg-white rounded-lg shadow-lg overflow-hidden">
+
+                    <!--Accordion item 1 , acive  -->
+
+
+                    <div class="border-b border-gray-200">
+                        <button onclick="toggleAccordion(this)"
+                            class="accordion-button w-full flex items-center justify-between p-4 text-left hover:bg-gray-50 transition-colors">
+                            <span class="font-medium text-darkblue hover:text-blue-600 :text-blue-600 ">Non consectetur
+                                a erat nam at lectus urna
+                                duis?</span>
+                            <svg class="accordion-arrow w-5 h-5 text-gray-500 transition-transform duration-200 rotate-90"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7">
+                                </path>
+                            </svg>
+                        </button>
+                        <div class="accordion-content max-h-40 overflow-auto transition-all duration-200">
+                            <div class="p-4 pt-0 text-darkblue">
+                                Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non
+                                curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus
+                                non.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Accordion Item 2 -->
+                    <div class="border-b border-gray-200">
+                        <button onclick="toggleAccordion(this)"
+                            class="accordion-button w-full flex items-center justify-between p-4 text-left hover:bg-gray-50 transition-colors">
+                            <span class="font-medium text-darkblue hover:text-blue-600">Feugiat scelerisque varius morbi
+                                enim nunc faucibus
+                                a pellentesque?</span>
+                            <svg class="accordion-arrow w-5 h-5 text-gray-500 transition-transform duration-200"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7">
+                                </path>
+                            </svg>
+                        </button>
+                        <div class="accordion-content max-h-0 overflow-auto
+                          transition-all duration-200 ">
+                            <div class="p-4 
+                             pt-0 text-darkblue ">
+                                Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum
+                                velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec
+                                pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus
+                                turpis massa tincidunt dui.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Accordion Item 3 -->
+                    <div>
+                        <button onclick="toggleAccordion(this)"
+                            class="accordion-button w-full flex items-center justify-between p-4 text-left hover:bg-gray-50 transition-colors">
+                            <span class="font-medium text-darkblue hover:text-blue-600">Dolor sit amet consectetur
+                                adipiscing elit
+                                pellentesque?</span>
+                            <svg class="accordion-arrow w-5 h-5 text-gray-500 transition-transform duration-200"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7">
+                                </path>
+                            </svg>
+                        </button>
+                        <div class="accordion-content max-h-0 overflow-auto transition-all duration-200">
+                            <div class="p-4 pt-0 text-darkblue">
+                                Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus
+                                pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum
+                                tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna
+                                molestie at elementum eu facilisis sed odio morbi quis
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+
+            <!-- Accordion 2  -->
+            <div class="col">
+
+                <div class="w-full max-w-2xl bg-white rounded-lg shadow-lg overflow-hidden">
+
+
+                    <div class="border-b border-gray-200">
+                        <button onclick="toggleAccordion(this)"
+                            class="accordion-button w-full flex items-center justify-between p-4 text-left hover:bg-gray-50 transition-colors">
+                            <span class="font-medium text-darkblue hover:text-blue-600">Ac odio tempor orci dapibus.
+                                Aliquam eleifend mi in
+                                nulla?</span>
+                            <svg class="accordion-arrow w-5 h-5 text-gray-500 transition-transform duration-200 rotate-90"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7">
+                                </path>
+                            </svg>
+                        </button>
+                        <div class="accordion-content max-h-40 overflow-auto transition-all duration-200">
+                            <div class="p-4 pt-0 text-darkblue">
+                                Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum
+                                velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec
+                                pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus
+                                turpis massa tincidunt dui.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Accordion Item 2 -->
+                    <div class="border-b border-gray-200">
+                        <button onclick="toggleAccordion(this)"
+                            class="accordion-button w-full flex items-center justify-between p-4 text-left hover:bg-gray-50 transition-colors">
+                            <span class="font-medium text-darkblue hover:text-blue-600">Tempus quam pellentesque nec nam
+                                aliquam sem et
+                                tortor consequat?</span>
+                            <svg class="accordion-arrow w-5 h-5 text-gray-500 transition-transform duration-200"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7">
+                                </path>
+                            </svg>
+                        </button>
+                        <div class="accordion-content max-h-0 overflow-auto transition-all duration-200">
+                            <div class="p-4 pt-0 text-darkblue">
+                                Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est
+                                ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit
+                                adipiscing bibendum est. Purus gravida quis blandit turpis cursus in
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Accordion Item 3 -->
+                    <div>
+                        <button onclick="toggleAccordion(this)"
+                            class="accordion-button w-full flex items-center justify-between p-4 text-left hover:bg-gray-50 transition-colors">
+                            <span class="font-medium text-darkblue hover:text-blue-600">Perspiciatis quod quo quos nulla
+                                quo illum
+                                ullam?</span>
+                            <svg class="accordion-arrow w-5 h-5 text-gray-500 transition-transform duration-200"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7">
+                                </path>
+                            </svg>
+                        </button>
+                        <div class="accordion-content max-h-0 overflow-auto transition-all duration-200">
+                            <div class="p-4 pt-0 text-darkblue">
+                                Enim ea facilis quaerat voluptas quidem et dolorem. Quis et consequatur non sed in
+                                suscipit sequi. Distinctio ipsam dolore et.
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+    </section>
+    <!--Faq section ends -->
+
+    <!--Portfolio section starts -->
+
+    <section class="container w-4/5 mx-auto">
+
+        <div class="flex flex-col items-center gap-4">
+            <h4 class="heading-style">PORTFOLIO</h4>
+            <p class="text-style">Check our latest work</p>
+
+        </div>
+
+
+        <div class=" container   mx-auto">
+            <!-- Mini Navbar -->
+            <nav class=" p-4 mb-8 ">
+
+                <ul class="flex gap-4 justify-center flex-wrap text-black/80 cursor-pointer ">
+                    <li>
+                        <button onclick="filterItems('all')"
+                            class="filter-btn px-2 py-2 font-medium transition-all duration-200 " data-filter="all">
+                            All
+                        </button>
+                    </li>
+                    <li>
+                        <button onclick="filterItems('app')"
+                            class="filter-btn px-2 py-2 font-medium transition-all duration-200 hover:text-blue-600  "
+                            data-filter="app">
+                            App
+                        </button>
+                    </li>
+                    <li>
+                        <button onclick="filterItems('product')"
+                            class="filter-btn px-2 py-2 font-medium transition-all duration-200 hover:text-blue-600  "
+                            data-filter="product">
+                            Product
+                        </button>
+                    </li>
+                    <li>
+                        <button onclick="filterItems('branding')"
+                            class="filter-btn px-2 py-2 font-medium transition-all duration-200 hover:text-blue-600  "
+                            data-filter="branding">
+                            Branding
+                        </button>
+                    </li>
+                    <li>
+                        <button onclick="filterItems('books')"
+                            class="filter-btn px-2 py-2 font-medium transition-all duration-200 hover:text-blue-600 "
+                            data-filter="books">
+                            Books
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- Images Grid -->
+            <div class="grid grid-cols-1 min-w-full  sm:grid-cols-2 lg:grid-cols-3 gap-6  ">
+                <!-- App Items -->
+                <div
+                    class="  col item app  rounded-lg shadow-md overflow-hidden hover:scale-105 transition-all duration-300  ">
+
+                    <img  src="img/portfolio/app-1.jpg" alt="">
+
+                </div>
+
+                <div class="item app  rounded-lg shadow-md overflow-hidden transition-all duration-300 hover:scale-105">
+                    <img src="img/portfolio/app-2.jpg" alt="">
+
+                </div>
+
+                <div class="item app  rounded-lg shadow-md overflow-hidden hover:scale-105 transition-all duration-300">
+                    <img src="img/portfolio/app-3.jpg" alt="">
+
+                </div>
+
+                <!-- Product Items -->
+                <div
+                    class="col item product  rounded-lg shadow-md overflow-hidden hover:scale-105 transition-all duration-300">
+                    <img src="img/portfolio/product-1.jpg" alt="">
+
+                </div>
+
+                <div
+                    class="col item product  rounded-lg shadow-md overflow-hidden hover:scale-105 transition-all duration-300">
+                    <img src="img/portfolio/product-2.jpg" alt="">
+                </div>
+
+                <div
+                    class="col item product  rounded-lg shadow-md overflow-hidden hover:scale-105 transition-all duration-300">
+                    <img src="img/portfolio/product-3.jpg" alt="">
+                </div>
+
+                <!-- Branding Items -->
+                <div
+                    class="col item branding  rounded-lg shadow-md overflow-hidden hover:scale-105 transition-all duration-300">
+                    <img src="img/portfolio/branding-1.jpg" alt="">
+                </div>
+
+                <div
+                    class="col item branding  rounded-lg shadow-md overflow-hidden hover:scale-105 transition-all duration-300">
+
+                    <img src="img/portfolio/branding-2.jpg" alt="">
+
+                </div>
+
+                <div
+                    class="col item branding  rounded-lg shadow-md overflow-hidden hover:scale-105 transition-all duration-300">
+
+                    <img src="img/portfolio/branding-3.jpg" alt="">
+
+                </div>
+
+                <!-- Books Items -->
+                <div
+                    class="col item books rounded-lg shadow-md overflow-hidden hover:scale-105 transition-all duration-300">
+                    <img src="img/portfolio/books-1.jpg" alt="">
+                </div>
+
+                <div
+                    class="col item books  rounded-lg shadow-md overflow-hidden hover:scale-105 transition-all duration-300">
+                    <img src="img/portfolio/books-2.jpg" alt="">
+
+                </div>
+
+                <div
+                    class="col item books  rounded-lg shadow-md overflow-hidden hover:scale-105 transition-all duration-300">
+                    <img src="img/portfolio/books-3.jpg" alt="">
+
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+    <!-- Potfolio section ends -->
+
+    <!--Testimonials section starts -->
+
+    <section class="w-full px-6 xl:container xl:w4/5 xl:mx-auto my-20 ">
+
+
+        <div class="flex flex-col items-center gap-4">
+            <h4 class="heading-style">PORTFOLIO</h4>
+            <p class="text-style">Check our latest work</p>
+
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4 my-20">
+
+            <!-- Testimonial card 1-->
+
+            <div class="col flex">
+                <div class="card p-10 shadow-2xl">
+                    <div class="flex space-x-2">
+                        <i class="bi bi-star-fill text-amber-300"></i>
+                        <i class="bi bi-star-fill text-amber-300"></i>
+                        <i class="bi bi-star-fill text-amber-300"></i>
+                        <i class="bi bi-star-fill text-amber-300"></i>
+                        <i class="bi bi-star-fill text-amber-300"></i>
+                    </div>
+                    <div class="flex flex-col items-center space-y-4">
+                        <p>Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis
+                            minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.</p>
+                        <img class="rounded-full size-20 " src="img/testimonials/testimonials-1.jpg" alt="">
+                        <div>
+
+                            <h5 class="text-darkblue font-semibold">Saul Goodman</h5>
+                            <small class="text-gray-400">CEO & Founder</small>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Testimonial card 2-->
+
+            <div class="col flex">
+                <div class="card py-10 px-8 shadow-2xl">
+                    <div class="flex space-x-2">
+                        <i class="bi bi-star-fill text-amber-300"></i>
+                        <i class="bi bi-star-fill text-amber-300"></i>
+                        <i class="bi bi-star-fill text-amber-300"></i>
+                        <i class="bi bi-star-fill text-amber-300"></i>
+                        <i class="bi bi-star-fill text-amber-300"></i>
+                    </div>
+                    <div class="flex flex-col items-center space-y-4">
+                        <p>
+                            Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum
+                            eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim
+                            culpa.
+                        </p>
+                        <img class="rounded-full size-20 " src="img/testimonials/testimonials-2.jpg" alt="">
+                        <div>
+
+                            <h5 class="text-darkblue font-semibold">Sara Wilsson</h5>
+                            <small class="text-gray-400">Designer</small>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Testimonial card 3-->
+
+            <div class="col flex">
+                <div class="card p-10 shadow-2xl">
+                    <div class="flex space-x-2">
+                        <i class="bi bi-star-fill text-amber-300"></i>
+                        <i class="bi bi-star-fill text-amber-300"></i>
+                        <i class="bi bi-star-fill text-amber-300"></i>
+                        <i class="bi bi-star-fill text-amber-300"></i>
+                        <i class="bi bi-star-fill text-amber-300"></i>
+                    </div>
+                    <div class="flex flex-col items-center space-y-4">
+                        <p>
+                            Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis
+                            minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
+                        </p>
+                        <img class="rounded-full size-20 " src="img/testimonials/testimonials-3.jpg" alt="">
+                        <div>
+
+                            <h5 class="text-darkblue font-semibold">Jena Carlis</h5>
+                            <small class="text-gray-400">Store Owner</small>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- Testimonial card 4-->
+
+            <div class="col flex">
+                <div class="card px-8 py-10 shadow-2xl">
+                    <div class="flex space-x-2">
+                        <i class="bi bi-star-fill text-amber-300"></i>
+                        <i class="bi bi-star-fill text-amber-300"></i>
+                        <i class="bi bi-star-fill text-amber-300"></i>
+                        <i class="bi bi-star-fill text-amber-300"></i>
+                        <i class="bi bi-star-fill text-amber-300"></i>
+                    </div>
+                    <div class="flex flex-col items-center space-y-4">
+                        <p>
+                            Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim
+                            velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum
+                            veniam.
+                        </p>
+                        <img class="rounded-full size-20 " src="img/testimonials/testimonials-4.jpg" alt="">
+                        <div>
+
+                            <h5 class="text-darkblue font-semibold">Matt Brandon</h5>
+                            <small class="text-gray-400">Freelancer</small>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- Testimonial card 5-->
+
+            <div class="col flex">
+                <div class="card px-8 py-10 shadow-2xl">
+                    <div class="flex space-x-2">
+                        <i class="bi bi-star-fill text-amber-300"></i>
+                        <i class="bi bi-star-fill text-amber-300"></i>
+                        <i class="bi bi-star-fill text-amber-300"></i>
+                        <i class="bi bi-star-fill text-amber-300"></i>
+                        <i class="bi bi-star-fill text-amber-300"></i>
+                    </div>
+                    <div class="flex flex-col items-center space-y-4">
+                        <p>
+                            Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam
+                            enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore
+                            nisi cillum quid.
+                        </p>
+                        <img class="rounded-full size-20 " src="img/testimonials/testimonials-1.jpg" alt="">
+                        <div>
+
+                            <h5 class="text-darkblue font-semibold">John Larson</h5>
+                            <small class="text-gray-400">Enterpreneur</small>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+    </section>
+
+    <!--Testimonial Section ends-->
+
+    <!--Team section starts -->
+
+    <section class="w-full px-6 xl:container xl:w4/5 xl:mx-auto ">
+
+        <div class="flex flex-col items-center gap-4 ">
+            <h4 class="heading-style">TEAM</h4>
+            <p class="text-style">Our hard working team</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-4 mt-20 max-lg:w-full ">
+
+            <!--Team card-1 -->
+
+            <div class="col flex">
+
+                <div class="card p-0   hover:scale-102 duration-300 group shadow-xl ">
+                    <div class="relative ">
+
+                        <img class="w-screen" src="img/team/team-1.jpg" alt="">
+
+                        <!-- SVG Wave design -->
+
+                        <img src="img/mask/team-shape.svg" class="absolute bottom-0 bg-transparent invert-100 z-10"
+                            alt="">
+
+                        <!-- Social links -->
+
+                        <div class="bg-lite/20  absolute top-10 right-1.5  flex-col p-3 hidden group-hover:flex  ">
+
+                            <a href="#">
+                                <i class="bi bi-twitter-x text-2xl opacity-30 hover:opacity-100 "></i>
+                            </a>
+                            <a href="#">
+                                <i class="bi bi-facebook text-2xl opacity-30 hover:opacity-100"></i>
+                            </a>
+                            <a href="#">
+                                <i class="bi bi-instagram text-2xl opacity-30 hover:opacity-100"></i>
+                            </a>
+                            <a href="#">
+                                <i class="bi bi-linkedin text-2xl opacity-30 hover:opacity-100"></i>
+                            </a>
+
+                        </div>
+
+
+                    </div>
+                    <div class="flex flex-col space-y-5 p-4 pb-10 ">
+                        <h5 class="text-darkblue font-medium text-xl">Walter White</h5>
+                        <small class="text-gray-400">Chief Executive Officer</small>
+                        <p class="text-gray-500 italic">Velit aut quia fugit et et. Dolorum ea voluptate vel tempore
+                            tenetur ipsa quae aut. Ipsum exercitationem iure minima enim corporis et voluptate.</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <!--Team card-2 -->
+
+            <div class="col flex">
+                <div class="card p-0   hover:scale-102 duration-300 group shadow-xl  ">
+                    <div class="relative">
+                        <img class="w-screen" src="img/team/team-2.jpg" alt="">
+
+                        <!-- SVG Wave design -->
+
+                        <img src="img/mask/team-shape.svg" class="absolute bottom-0 bg-transparent invert-100 z-50"
+                            alt="">
+
+                        <!-- Social links -->
+
+                        <div class="bg-lite/20  absolute top-10 right-1.5  flex-col p-3 hidden group-hover:flex  ">
+
+                            <a href="#">
+                                <i class="bi bi-twitter-x text-2xl opacity-30 hover:opacity-100 "></i>
+                            </a>
+                            <a href="#">
+                                <i class="bi bi-facebook text-2xl opacity-30 hover:opacity-100"></i>
+                            </a>
+                            <a href="#">
+                                <i class="bi bi-instagram text-2xl opacity-30 hover:opacity-100"></i>
+                            </a>
+                            <a href="#">
+                                <i class="bi bi-linkedin text-2xl opacity-30 hover:opacity-100"></i>
+                            </a>
+
+                        </div>
+
+                    </div>
+                    <div class="flex flex-col space-y-5 p-4 pb-10 ">
+                        <h5 class="text-darkblue font-medium text-xl">Sarah Jhonson</h5>
+                        <small class="text-gray-400">Product Manager</small>
+                        <p class="text-gray-500 italic">Quo esse repellendus quia id. Est eum et accusantium
+                            pariatur fugit nihil minima suscipit corporis. Voluptate sed quas reiciendis animi neque
+                            sapiente.</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <!--Team card-3 -->
+
+            <div class="col flex">
+                <div class="card p-0   hover:scale-102 duration-300 group shadow-xl ">
+                    <div class="relative">
+                        <img class="w-screen" src="img/team/team-3.jpg" alt="">
+
+                        <!-- SVG Wave design -->
+
+                        <img src="img/mask/team-shape.svg" class="absolute bottom-0 bg-transparent invert-100 z-50"
+                            alt="">
+
+                        <!-- Social links -->
+
+                        <div class="bg-lite/20  absolute top-10 right-1.5  flex-col p-3 hidden group-hover:flex  ">
+
+                            <a href="#">
+                                <i class="bi bi-twitter-x text-2xl opacity-30 hover:opacity-100 "></i>
+                            </a>
+                            <a href="#">
+                                <i class="bi bi-facebook text-2xl opacity-30 hover:opacity-100"></i>
+                            </a>
+                            <a href="#">
+                                <i class="bi bi-instagram text-2xl opacity-30 hover:opacity-100"></i>
+                            </a>
+                            <a href="#">
+                                <i class="bi bi-linkedin text-2xl opacity-30 hover:opacity-100"></i>
+                            </a>
+
+                        </div>
+
+                    </div>
+                    <div class="flex flex-col space-y-5 p-4 pb-10 ">
+                        <h5 class="text-darkblue font-medium text-xl">William Anderson</h5>
+                        <small class="text-gray-400">CTO</small>
+                        <p class="text-gray-500 italic">Vero omnis enim consequatur. Voluptas consectetur unde qui
+                            molestiae deserunt. Voluptates enim aut architecto porro aspernatur molestiae modi.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!--Team card-4 -->
+
+            <div class="col flex">
+                <div class="card p-0  hover:scale-102 duration-300 group shadow-xl  ">
+                    <div class="relative">
+                        <img class="w-screen" src="img/team/team-4.jpg" alt="">
+
+                        <!-- SVG Wave design -->
+
+                        <img src="img/mask/team-shape.svg" class="absolute bottom-0 bg-transparent invert-100 z-50"
+                            alt="">
+
+                        <!-- Social links -->
+
+                        <div class="bg-lite/20  absolute top-10 right-1.5  flex-col p-3 hidden group-hover:flex  ">
+
+                            <a href="#">
+                                <i class="bi bi-twitter-x text-2xl opacity-30 hover:opacity-100 "></i>
+                            </a>
+                            <a href="#">
+                                <i class="bi bi-facebook text-2xl opacity-30 hover:opacity-100"></i>
+                            </a>
+                            <a href="#">
+                                <i class="bi bi-instagram text-2xl opacity-30 hover:opacity-100"></i>
+                            </a>
+                            <a href="#">
+                                <i class="bi bi-linkedin text-2xl opacity-30 hover:opacity-100"></i>
+                            </a>
+
+                        </div>
+
+                    </div>
+                    <div class="flex flex-col space-y-5 p-4 pb-10 ">
+                        <h5 class="text-darkblue font-medium text-xl">Amanda Jepson</h5>
+                        <small class="text-gray-400">Accountant</small>
+                        <p class="text-gray-500 italic">Rerum voluptate non adipisci animi distinctio et deserunt
+                            amet voluptas. Quia aut aliquid doloremque ut possimus ipsum officia.</p>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+    <!-- Team section ends-->
+
+    <section class="w-full px-6 xl:container xl:w4/5 xl:mx-auto ">
+
+        <div class="flex flex-col items-center gap-4 mt-20 ">
+            <h4 class="heading-style">CLIENTS</h4>
+            <p class="text-style">We work with best clients</p>
+        </div>
+
+        <!-- clients carousal-->
+
+        <div class=" max-h-screen flex items-center justify-center p-4">
+            <div class="max-w-2xl w-full">
+                <!-- Carousel Container -->
+                <div class="relative bg-white rounded-lg shadow-lg overflow-hidden">
+                    <!-- Slides -->
+                    <div id="carousel" class="relative h-96">
+                        <!-- Slide 1 -->
+                        <div
+                            class="carousel-slide absolute w-full h-full flex items-center justify-center bg-transparent ">
+                            <img src="img/clients/client-1.png" alt="">
+                        </div>
+
+                        <!-- Slide 2 -->
+                        <div
+                            class="carousel-slide absolute w-full h-full flex items-center justify-center bg-transparent">
+                            <img src="img/clients/client-2.png" alt="">
+                        </div>
+
+                        <!-- Slide 3 -->
+                        <div
+                            class="carousel-slide absolute w-full h-full flex items-center justify-center bg-transparent">
+                            <img src="img/clients/client-3.png" alt="">
+                        </div>
+
+                        <!-- Slide 4 -->
+                        <div
+                            class="carousel-slide absolute w-full h-full flex items-center justify-center bg-transparent">
+                            <img src="img/clients/client-4.png" alt="">
+                        </div>
+
+                        <!-- Slide 5 -->
+                        <div
+                            class="carousel-slide absolute w-full h-full flex items-center justify-center bg-transparent">
+                            <img src="img/clients/client-5.png" alt="">
+                        </div>
+
+                        <!-- Slide 6 -->
+                        <div
+                            class="carousel-slide absolute w-full h-full flex items-center justify-center bg-transparent">
+                            <img src="img/clients/client-6.png" alt="">
+                        </div>
+                        <!-- Slide 7 -->
+                        <div
+                            class="carousel-slide absolute w-full h-full flex items-center justify-center bg-transparent">
+                            <img src="img/clients/client-7.png" alt="">
+                        </div>
+                        <!-- Slide 8 -->
+                        <div
+                            class="carousel-slide absolute w-full h-full flex items-center justify-center bg-transparent">
+                            <img src="img/clients/client-8.png" alt="">
+                        </div>
+                    </div>
+
+                    <!-- Previous Button -->
+                    <button id="prev"
+                        class="absolute left-4 top-3/4 md:top-1/2 -translate-y-1/2 bg-white bg-opacity-50 hover:bg-opacity-75 rounded-full p-2 transition-all duration-200">
+                        <svg class="w-6 h-6 text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7">
+                            </path>
+                        </svg>
+                    </button>
+
+                    <!-- Next Button -->
+                    <button id="next"
+                        class="absolute right-4  top-3/4 md:top-1/2 -translate-y-1/2 bg-white bg-opacity-50 hover:bg-opacity-75 rounded-full p-2 transition-all duration-200">
+                        <svg class="w-6 h-6 text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7">
+                            </path>
+                        </svg>
+                    </button>
+
+                    <!-- Indicators -->
+                    <div class="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2">
+                        <button class="indicator w-3 h-3 rounded-full bg-white transition-all duration-200"></button>
+                        <button
+                            class="indicator w-3 h-3 rounded-full bg-white bg-opacity-50 transition-all duration-200"></button>
+                        <button
+                            class="indicator w-3 h-3 rounded-full bg-white bg-opacity-50 transition-all duration-200"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- clients section ends -->
+
+    <!-- Blogs section starts -->
+
+    <section class="w-full px-6 xl:container xl:w4/5 xl:mx-auto ">
+
+        <div class="flex flex-col items-center gap-4 my-20 ">
+            <h4 class="heading-style">RECENT POSTS</h4>
+            <p class="text-style">Recent posts form our Blog</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+
+            <!-- Blog post 1-->
+            <div class="col">
+                <div class="card p-0 text-start shadow-2xl group  ">
+                    <div class="relative overflow-hidden ">
+
+                        <img class="transition-all ease-in-out duration-500 group-hover:scale-105   "
+                            src="img/blog/blog-1.jpg" alt="">
+                        <div class="absolute bottom-0 right-0 bg-blue-600 px-2">
+                            <small class="text-white/90 font-semibold">DECEMBER 12</small>
+
+                        </div>
+
+                    </div>
+
+                    <div class="py-5 px-10 flex flex-col space-y-4  ">
+                        <h6
+                            class="text-darkblue text-xl font-semibold group-hover:text-blue-600 group-hover:duration-500 ">
+                            Eum ad dolor et. Autem aut fugiat debitis</h6>
+
+                        <!-- Breadcrumb with Slash Separator -->
+
+                        <div class="flex border-b border-gray-100 py-4">
+                            <ol class="inline-flex items-center space-x-1">
+                                <li class="inline-flex items-center">
+                                    <a href="#" class="text-sm font-medium text-gray-400 hover:text-blue-700">
+                                        <i class="bi bi-person text-blue-600"></i>
+                                        Julia Parker
+                                    </a>
+                                </li>
+                                <li>
+                                    <div class="flex items-center">
+                                        <span class="mx-2 text-gray-400">/</span>
+                                        <a href="#" class="text-sm font-medium text-gray-400 hover:text-blue-700">
+                                            <i class="bi bi-folder2 text-blue-600"></i>
+                                            Politics</a>
+                                    </div>
+                                </li>
+                                <li>
+                            </ol>
+                        </div>
+
+                        <a class="text-gray-400 font-semibold group-hover:text-blue-600 group-hover:duration-500"
+                            href="#">Read More <i class="bi bi-arrow-right "></i></a>
+
+                    </div>
+                </div>
+            </div>
+            <!-- Blog post 2-->
+            <div class="col">
+                <div class="card p-0 text-start shadow-2xl group  ">
+                    <div class="relative overflow-hidden ">
+
+                        <img class="transition-all ease-in-out duration-500 group-hover:scale-105  "
+                            src="img/blog/blog-2.jpg" alt="">
+                        <div class="absolute bottom-0 right-0 bg-blue-600 px-2">
+                            <small class="text-white/90 font-semibold">JULY 17</small>
+
+                        </div>
+
+                    </div>
+
+                    <div class="py-5 px-10 flex flex-col space-y-4  ">
+                        <h6
+                            class="text-darkblue text-xl font-semibold group-hover:text-blue-600 group-hover:duration-500 ">
+                            Et repellendus molestiae qui est sed omnis</h6>
+
+                        <!-- Breadcrumb with Slash Separator -->
+
+                        <div class="flex border-b border-gray-100 py-4">
+                            <ol class="inline-flex items-center space-x-1">
+                                <li class="inline-flex items-center">
+                                    <a href="#" class="text-sm font-medium text-gray-400 hover:text-blue-700">
+                                        <i class="bi bi-person text-blue-600"></i>
+                                        Mario Douglas
+                                    </a>
+                                </li>
+                                <li>
+                                    <div class="flex items-center">
+                                        <span class="mx-2 text-gray-400">/</span>
+                                        <a href="#" class="text-sm font-medium text-gray-400 hover:text-blue-700">
+                                            <i class="bi bi-folder2 text-blue-600"></i>
+                                            Sports</a>
+                                    </div>
+                                </li>
+                                <li>
+                            </ol>
+                        </div>
+
+                        <a class="text-gray-400 font-semibold group-hover:text-blue-600 group-hover:duration-500"
+                            href="#">Read More <i class="bi bi-arrow-right "></i></a>
+
+                    </div>
+                </div>
+            </div>
+            <!-- Blog post 3-->
+            <div class="col">
+                <div class="card p-0 text-start shadow-2xl group ">
+                    <div class="relative overflow-hidden ">
+
+                        <img class="transition-all ease-in-out duration-500 group-hover:scale-105  "
+                            src="img/blog/blog-3.jpg" alt="">
+                        <div class="absolute bottom-0 right-0 bg-blue-600 px-2">
+                            <small class="text-white/90 font-semibold">SEPTEMBER 05</small>
+
+                        </div>
+
+                    </div>
+
+                    <div class="py-5 px-10 flex flex-col space-y-4  ">
+                        <h6
+                            class="text-darkblue text-xl font-semibold group-hover:text-blue-600 group-hover:duration-500 ">
+                            Quia assumenda est et veritati tirana ploder</h6>
+
+                        <!-- Breadcrumb with Slash Separator -->
+
+                        <div class="flex border-b border-gray-100 py-4">
+                            <ol class="inline-flex items-center space-x-1">
+                                <li class="inline-flex items-center">
+                                    <a href="#" class="text-sm font-medium text-gray-400 hover:text-blue-700">
+                                        <i class="bi bi-person text-blue-600"></i>
+                                        Lisa Hunter
+                                    </a>
+                                </li>
+                                <li>
+                                    <div class="flex items-center">
+                                        <span class="mx-2 text-gray-400">/</span>
+                                        <a href="#" class="text-sm font-medium text-gray-400 hover:text-blue-700">
+                                            <i class="bi bi-folder2 text-blue-600"></i>
+                                            Economics</a>
+                                    </div>
+                                </li>
+                                <li>
+                            </ol>
+                        </div>
+                        <!-- Read more link -->
+
+                        <a class="text-gray-400 font-semibold group-hover:text-blue-600 group-hover:duration-500"
+                            href="#">Read More <i class="bi bi-arrow-right "></i></a>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+    <!-- Blogs section ends -->
+
+    <!--Contact section starts -->
+
+    <section class="w-full px-6 xl:container xl:w4/5 xl:mx-auto mb-20">
+
+        <div class="flex flex-col items-center gap-4 my-20 ">
+            <h4 class="heading-style">CONTACT</h4>
+            <p class="text-style">Contact Us</p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 space-y-4">
+            <!-- Contact info -->
+            <div class="col">
+
+                <div class="grid grid-cols-1 sm:grid-cols-2  gap-6 ">
+                    <div class="col">
+                        <!-- Contact card-1-->
+                        <div class=" bg-lite flex flex-col space-y-4 p-5 ">
+                            <i class="bi bi-geo-alt text-blue-600 text-4xl "></i>
+                            <h6 class="text-darkblue text-2xl font-semibold">Address</h6>
+                            <address>A108 Adam Street <br>
+                                New York, NY 535022</address>
+                        </div>
+
+                    </div>
+                    <div class="col">
+                        <!-- Contact card-2-->
+                        <div class=" bg-lite  flex flex-col space-y-4 p-5 ">
+                            <i class="bi bi-telephone text-blue-600 text-4xl "></i>
+                            <h6 class="text-darkblue text-2xl font-semibold">Call Us</h6>
+                            <address>+1 5589 55488 55 <br>
+                                +1 6678 254445 41</address>
+                        </div>
+
+                    </div>
+
+                    <div class="col">
+                        <!-- Contact card-3-->
+                        <div class=" bg-lite  flex flex-col space-y-4 p-5 ">
+                            <i class="bi bi-envelope text-blue-600 text-4xl "></i>
+                            <h6 class="text-darkblue text-2xl font-semibold">Email Us</h6>
+                            <address>info@example.com <br>
+                                contact@example.com</address>
+                        </div>
+
+                    </div>
+                    <div class="col">
+                        <!-- Contact card-4-->
+                        <div class=" bg-lite  flex flex-col space-y-4 p-5 ">
+                            <i class="bi bi-clock text-blue-600 text-4xl "></i>
+                            <h6 class="text-darkblue text-2xl font-semibold">Open Hours</h6>
+                            <address>Monday - Friday <br>
+                                9:00AM - 05:00PM</address>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <!-- Support Forum -->
+            <div class="col">
+
+                <!--form-->
+                <form action="#">
+                    <div class="bg-lite grid grid-cols-2 gap-6 p-8">
+                        <div class="col">
+
+                            <input type="text"
+                                class="w-full bg-white px-3 py-1.5 rounded border-1  border-gray-200 focus:outline-1 outline-blue-600 placeholder:text-gray-400"
+                                id="name" placeholder="Your Name">
+
+                        </div>
+                        <div class="col">
+
+                            <input type="email" id="email" placeholder="Your Email"
+                                class="w-full bg-white px-3 py-1.5 rounded border-1  border-gray-200 focus:outline-1 outline-blue-600 placeholder:text-gray-400">
+                        </div>
+                        <div class="col-span-2">
+
+                            <input type="text" id="subject" placeholder="Subject"
+                                class="w-full bg-white px-3 py-1.5 rounded border-1 border-gray-200 focus:outline-1 outline-blue-600 placeholder:text-gray-400">
+
+                        </div>
+                        <div class="col-span-2">
+                            <textarea placeholder="Messege" rows="5"
+                                class="field-sizing-fixed w-full  bg-white px-3 py-1.5 rounded border-1  border-gray-200 focus:outline-1 outline-blue-600 placeholder:text-gray-400"></textarea>
+                        </div>
+
+                        <div class="col-span-2 place-self-center">
+                            <button type="button" id="button-form"
+                                class="bg-blue-600 text-white px-6 py-3 rounded-md hover:bg-blue-500/90 ">Send
+                                Message</button>
+
+                        </div>
+
+
+                    </div>
+                </form>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!--Contact section ends -->
+
+    <!--News Footer starts -->
+
+    <footer class="container min-w-full bg-lite border-1 border-gray-500/10">
+        <div class=" text-center px-20 py-15 flex flex-col space-y-6">
+            <h6 class="text-darkblue text-2xl  font-nunito font-bold ">Join Our Newsletter</h6>
+            <p>Subscribe to our newsletter and receive the latest news about our products and services!</p>
+            <span class="flex flex-row justify-center">
+                <input type="text"
+                    class="min-w-[30vw] bg-white px-4 py-2 rounded-md shadow-xl focus:outline-1 outline-blue-600">
+                <button type="button" id="button-form"
+                    class="bg-blue-600 text-white px-6 py-2 rounded-sm hover:bg-blue-500/90 ">Subscribe</button>
+
+            </span>
+        </div>
+
+    </footer>
+    <!--News Footer ends -->
+
+    <!-- Footer Links Starts  -->
+    <footer class="w-full px-6 xl:container xl:w4/5 xl:mx-auto ">
+
+        <div
+            class="grid grid-cols-1 py-6 md:grid-cols-2 lg:grid-cols-3  space-y-6 md:p-10 border-b border-b-gray-500/20">
+
+            <div class="col">
+                <ul class="flex flex-col space-y-4 text-black/80 ">
+
+                    <li class="text-xl text-darkblue font-semibold font-nunito">
+                        <a href="#">FlexStart</a>
+                    </li>
+                    <li>
+                        A108 Adam Street <br> New York, NY 535022
+                    </li>
+                    <li>
+                        <span class="font-semibold opacity-80 ">Phone: </span>+1 5589 55488 55 <br>
+                        <span class="font-semibold opacity-80 ">Email: </span>info@example.com
+
+                    </li>
+
+                </ul>
+            </div>
+            <div class="col">
+                <div class="grid grid-cols-2 ">
+                    <div class="col">
+                        <ul class="flex flex-col space-y-3 text-gray-500">
+                            <li class="text-darkblue font-medium">Useful Links</li>
+                            <li> <i class="bi bi-chevron-right text-blue-600"></i>
+                                <a class="hover:text-blue-600" href="#">Home</a>
+                            </li>
+                            <li><i class="bi bi-chevron-right text-blue-600"></i>
+                                <a class="hover:text-blue-600" href="#">About us</a>
+                            </li>
+                            <li><i class="bi bi-chevron-right text-blue-600"></i>
+                                <a class="hover:text-blue-600" href="#">Services</a>
+                            </li>
+                            <li><i class="bi bi-chevron-right text-blue-600"></i>
+                                <a class="hover:text-blue-600" href="#">Term of service</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <ul class="flex flex-col space-y-3 text-gray-500">
+                            <li class="text-darkblue font-medium">Our Services</li>
+                            <li> <i class="bi bi-chevron-right text-blue-600"></i>
+                                <a class="hover:text-blue-600" href="#">Web Design</a>
+                            </li>
+                            <li><i class="bi bi-chevron-right text-blue-600"></i>
+                                <a class="hover:text-blue-600" href="#">Web Development</a>
+                            </li>
+                            <li><i class="bi bi-chevron-right text-blue-600"></i>
+                                <a class="hover:text-blue-600" href="#">Product Management</a>
+                            </li>
+                            <li><i class="bi bi-chevron-right text-blue-600"></i>
+                                <a class="hover:text-blue-600" href="#">Marketing</a>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col ">
+                <ul class="flex flex-col space-y-6 text-black/80">
+                    <li class="text-darkblue font-medium">Follow Us</li>
+                    <li>Cras fermentum odio eu feugiat lide par naso tierra videa magna derita valies</li>
+                    <li>
+                        <span>
+                            <a href="#"><i
+                                    class="bi bi-twitter-x text-xl text-blue-600 bg-lite py-3 px-4 hover:bg-blue-600 hover:text-white hover:duration-500 border-1 border-gray-500/10 rounded-lg  "></i></a>
+                            <a href="#"><i
+                                    class="bi bi-facebook text-xl text-blue-600 bg-lite py-3 px-4 hover:bg-blue-600 hover:text-white hover:duration-500 border-1 border-gray-500/10 rounded-lg"></i></a>
+                            <a href="#"><i
+                                    class="bi bi-instagram text-xl text-blue-600 bg-lite py-3 px-4 hover:bg-blue-600 hover:text-white hover:duration-500 border-1 border-gray-500/10 rounded-lg"></i></a>
+                            <a href="#"><i
+                                    class="bi bi-linkedin text-xl text-blue-600 bg-lite py-3 px-4 hover:bg-blue-600 hover:text-white hover:duration-500 border-1 border-gray-500/10 rounded-lg"></i></a>
+                        </span>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+    </footer>
+    <!-- Footer Links ends  -->
+
+    <!-- Footer Copyrights starts  -->
+
+    <footer class="container w-4/5 mx-auto text-center py-6 text-sm sm:text-lg">
+        <pre class="font-nunito">© Copyright <strong>FlexStart</strong> All Rights Reserved 
+           Designed by <a class="text-blue-600" href="#">BootstrapMade</a>
+            </pre>
+
+    </footer>
+    <!-- Footer Copyrights ends  -->
+
+
+</body>
+
+<script src="script.js"></script>
+
+</html>
